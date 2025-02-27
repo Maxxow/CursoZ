@@ -23,7 +23,7 @@ def buscar_solucion_BFS(estado_inicial, solucion):
             hijo = [dato_nodo[1], dato_nodo[0], dato_nodo[2], dato_nodo[3]]
             hijo_left = nodo(hijo)
             if not hijo_left.en_lista(nodos_visitados) and not hijo_left.en_lista(nodos_frontera):
-                nodos_frontera.append(hijo_left)    #! homework, programar hijo central e hijo derecho
+                nodos_frontera.append(hijo_left)    #! homework, programar hijo central e hijo derecho 
 
             # Operador central
             hijo = [dato_nodo[0], dato_nodo[2], dato_nodo[1], dato_nodo[3]]
@@ -34,5 +34,5 @@ def buscar_solucion_BFS(estado_inicial, solucion):
             # Operador derecho
             hijo = [dato_nodo[0], dato_nodo[1], dato_nodo[3], dato_nodo[2]]
             hijo_rigth = nodo(hijo)
-            if not hijo_rigth.en_lista(nodos_visitados) and not hijo_rigth.en_lista(nodos_frontera):
+            if not hijo_rigth.en_lista(nodos_visitados) and not hijo_rigth.en_lista(nodos_frontera):    #! Estudiar mas cawn
                 nodos_frontera.append(hijo_rigth) 
