@@ -26,6 +26,8 @@ def buscar_solucion_BFS(estado_inicial, solucion):
                 nodos_frontera.append(hijo)
 
     return None  # en caso de que no se encuentre resultado se retornara un nulo
+
+
 def obtener_camino(nodo):
     camino = []
     while nodo:
